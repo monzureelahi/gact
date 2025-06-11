@@ -13,7 +13,17 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Say Hello World
-        run: echo "Hello World from GitHub Actions!"
+        run: echo "Hello World from GitHub Actions Testing Job!"
+
+  GitHubAction-deploying:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Say Hello World Deployment
+        run: echo "Hello World from GitHub Actions Deploying Job!"
 
       - name: Check if index.html exists
         run: |
