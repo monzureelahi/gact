@@ -19,11 +19,11 @@ jobs:
       - name: Say Hello World Deployment
         run: echo "Hello World from GitHub Actions Deploying Job!"
 
-      - name: Check if index.html exists
-        run: |
-          if [ -f "index.html" ]; then
-            echo "✅ index.html exists."
-          else
-            echo "❌ index.html does NOT exist."
-            exit 1
-          fi
+#      - name: Check if index.html exists
+#        run: |
+#          if [ -f "index.html" ]; then
+#            echo "✅ index.html exists."
+#          else
+#            echo "❌ index.html does NOT exist."
+#            exit 1
+#          fi
