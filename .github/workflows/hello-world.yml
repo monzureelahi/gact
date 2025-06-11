@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  hello-world-testing:
+  GitHubAction-testing:
     runs-on: ubuntu-latest
 
     steps:
