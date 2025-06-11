@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 jobs:
-  hello-world:
+  hello-world-testing:
     runs-on: ubuntu-latest
 
     steps:
