@@ -1,0 +1,25 @@
+#--------------------------------------------------------------
+# This is a basic workflow to help you get started with Actions
+#--------------------------------------------------------------
+
+name: GitHub Actions - Basics
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  my_testing:
+    runs-on:[ubuntu-latest]
+
+    steps:
+      - name: Print this message from Testing Job
+        run: echo "Hello World from Test"
+
+  my_deploy:
+    runs-on:[ubuntu-latest]
+
+    steps:
+      - name: Print this message from Deploy Job
+        run: echo "Hello World from Deploy"
