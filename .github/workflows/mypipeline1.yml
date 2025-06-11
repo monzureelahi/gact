@@ -9,12 +9,12 @@ on:
     branches:
       - master
 
-jobs:
+  jobs:
     my_testing:
     runs-on:  [ubuntu-latest]
 
     steps:
+      - uses: actions/checkout@v4
       - name: Print this message from Testing Job
-        run:echo "Hello World from Test"
-
+        run: echo "Hello World from Test"
   
