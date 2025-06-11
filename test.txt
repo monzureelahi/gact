@@ -1,1 +1,34 @@
-Hello test
+Test GitHub Action yml script
+
+name: Hello World Test
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  GitHubAction-testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello World
+        run: echo "Hello World from GitHub Actions Testing Job!"
+
+  GitHubAction-deploying:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Say Hello World Deployment
+        run: echo "Hello World from GitHub Actions Deploying Job!"
+
+      - name: Check if index.html exists
+        run: |
+          if [ -f "index.html" ]; then
+            echo "✅ index.html exists."
+          else
+            echo "❌ index.html does NOT exist."
+            exit 1
+          fi
