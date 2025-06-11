@@ -16,9 +16,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
       - name: Say Hello World Deployment
         run: echo "Hello World from GitHub Actions Deploying Job!"
 
